@@ -230,7 +230,7 @@ function isIE() {
     if (o.length > 0) {
         $(document).ready(function () {
             o.RDNavbar({
-                stuckWidth: 768,
+                stuckWidth: 766,
                 stuckMorph: true,
                 stuckLayout: "rd-navbar-static",
                 responsive: {
