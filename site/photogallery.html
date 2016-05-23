@@ -2,7 +2,7 @@
 <html lang="en" class="wide smoothscroll wow-animation">
 <head>
     <!-- Site Title -->
-    <title>Contacts</title>
+    <title>Photo Gallery</title>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
@@ -73,15 +73,32 @@
                                 <a href="aboutus.html">About us</a>
 
                                 <!-- RD Navbar Dropdown -->
-                                    </li>
+                                <!-- <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href='#'>News</a>
+                                            </li>
+                                            <li>
+                                                <a href='#'>Events</a>
+                                                <ul class="rd-navbar-dropdown">
+                                                    <li><a href="#">History</a></li>
+                                                    <li><a href="#">Testimonials</a></li>
+                                                    <li><a href="#">Archive</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href='#'>Contacts</a>
+                                            </li>
+                                </ul> -->
                                 <!-- END RD Navbar Dropdown -->
+
+                            </li>
                             <li>
                                 <a href="service.html">Services</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="photogallery.html">Photo Gallery</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="contacts.html">Contacts</a>
                             </li>
                         </ul>
@@ -96,74 +113,112 @@
                               CONTENT
     =========================================================-->
     <main class="page-content">
-        <section id="contact_form">
-            <div class="container bg-white well-md-var-2 contact-margin text-md-left text-center">
-                <div class="row">
-                    <div class="col-md-8 col-md-preffix-1">
-                        <h2 class="text-bold">Contact form</h2>
-                 </div>
-                    <div class="col-md-10 col-md-preffix-1">
-                            <!-- RD Mailform -->
-                            <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
-                                <!-- RD Mailform Type -->
-                                <input type="hidden" name="form-type" value="contact"/>
-                                <!-- END RD Mailform Type -->
-                                <fieldset>
-                                    <div class="row">
-                                        <div class="block-1">
-                                    <label data-add-placeholder>
-                                        <input type="text"
-                                               name="name"
-                                               placeholder="Name*"
-                                               data-constraints="@NotEmpty @LettersOnly"/>
-                                    </label>
-
-                                    <label data-add-placeholder class="offset-11">
-                                        <input type="text"
-                                               name="email"
-                                               placeholder="Email*"
-                                               data-constraints="@NotEmpty @Email"/>
-                                    </label>
-
-                                    <label data-add-placeholder class="offset-11">
-                                        <input type="text"
-                                               name="phone"
-                                               placeholder="Phone"
-                                               data-constraints="@Phone"/>
-                                    </label>
-                                    </div>
-                                        <div class="block-2 offset-11">
-                                    <label data-add-placeholder>
-                                        <textarea name="message" placeholder="Message*"
-                                                  data-constraints="@NotEmpty"></textarea>
-                                    </label>
-                                        </div>
-                                    <div class="mfControls text-center">
-                                        <button class="btn btn-sm-var-1 btn-sm btn-aylen text-bold text-uppercase"
-                                        type="submit">submit message</button>
-                                    </div>
-                                    <div class="mfInfo">
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
-                            <!-- END RD Mailform -->
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!-- RD Google Map -->
-        <div class="rd-google-map rd-google-map-var-1">
-            <div id="google-map" class="rd-google-map__model" data-zoom="14" data-x="-63.614853"
-                 data-y="44.6663847"></div>
-            <ul class="rd-google-map__locations">
-                <li data-x="-73.9874068" data-y="40.643180">
-                    <p>9870 St Mary Place,<br>
-                        London, DC 45 Fr 45.</p>
-                </li>
-            </ul>
+        <!-- Gallery -->
+        <section class="well-lg">
+        <div class="container text-center text-md-left">
+            <div class="isotope-filters">
+                <button data-isotope-filter="*" data-isotope-group="gallery">
+                    show all
+                </button>
+                <button data-isotope-filter="type-1" data-isotope-group="gallery" class="preffix-1">
+                    first category
+                </button>
+                <button data-isotope-filter="type-2" data-isotope-group="gallery" class="preffix-1">
+                    second category
+                </button>
+                <button data-isotope-filter="type-3" data-isotope-group="gallery" class="preffix-1">
+                    third category
+                </button>
         </div>
-        <!-- END RD Google Map -->
+
+            <div class="row row-no-gutter isotope"
+                 data-isotope-group="gallery"
+                 data-isotope-layout="fitRows"
+                 data-lightbox="gallery">
+                <div class="col-md-6 col-sm-6" data-filter="type-3">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-01_original.jpg">
+                        <img src="images/gallery-01.jpg"  width="600" height="510" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-6 col-sm-6" data-filter="type-3">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-02_original.jpg">
+                        <img src="images/gallery-02.jpg" width="570" height="510" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-4 col-sm-4" data-filter="type-2">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-03_original.jpg">
+                        <img src="images/gallery-03.jpg" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-4 col-sm-4" data-filter="type-2">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-04_original.jpg">
+                        <img src="images/gallery-04.jpg" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-4 col-sm-4" data-filter="type-2">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-05_original.jpg">
+                        <img src="images/gallery-05.jpg" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-6 col-sm-6" data-filter="type-1">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-06_original.jpg">
+                        <img src="images/gallery-06.jpg" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-6 col-sm-6" data-filter="type-1">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-07_original.jpg">
+                        <img src="images/gallery-07.jpg" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-4 col-sm-4" data-filter="type-2">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-08_original.jpg">
+                        <img src="images/gallery-08.jpg" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-4 col-sm-4" data-filter="type-2">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-09_original.jpg">
+                        <img src="images/gallery-09.jpg" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+                <div class="col-md-4 col-sm-4" data-filter="type-2">
+                    <!-- Magnific Popup Image -->
+                    <a class="thumb" data-lightbox="image" href="images/gallery-10_original.jpg">
+                        <img src="images/gallery-10.jpg" alt=""/>
+                        <span class="thumb__overlay fa fa-search"></span>
+                    </a>
+                    <!-- END Magnific Popup Image -->
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- END Gallery-->
     </main>
     <!--========================================================
                               FOOTER
@@ -189,7 +244,7 @@
 
                       <dl>
                           <dt>E-mail</dt>
-                          <dd><a href="mailto:#" class="mail">mail@demolink.org</a></dd>
+                          <dd><a href="mailto:#" class="mail">info@alisar.ca</a></dd>
                       </dl>
                   </div>
               </div>
@@ -212,7 +267,7 @@
                       <li><a href="#" class="fa-instagram"></a></li>
                   </ul>
                    <p class="text-bold">Still have questions?</p>
-                  <a href="#contact_form" class="btn btn-xs btn-aylen-2 text-bold">Send request ›</a>
+                  <a href="contacts.html" class="btn btn-xs btn-aylen-2 text-bold">Send request ›</a>
               </div>
               <div class="col-md-11 col-md-preffix-1 offset-7">
                   <p class="small">
