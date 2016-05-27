@@ -10524,7 +10524,8 @@ div.drag {
     min-width: 300px; }
   .rd-navbar-static .rd-navbar-nav-wrap {
     width: 100%;
-    text-align: right; }
+    text-align: center;
+  display: block;}
   .rd-navbar-static .rd-navbar-nav {
     margin-left: -2px; }
     .rd-navbar-static .rd-navbar-nav > li {
