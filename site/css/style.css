@@ -10523,11 +10523,12 @@ div.drag {
     text-align: left;
     min-width: 300px; }
   .rd-navbar-static .rd-navbar-nav-wrap {
-    width: 100%;
+    width: 107%;
     text-align: center;
-  display: block;}
+  display: block;
+}
   .rd-navbar-static .rd-navbar-nav {
-    margin-left: -2px; }
+    margin-left: -75px; }
     .rd-navbar-static .rd-navbar-nav > li {
       display: inline-block;
       margin-left: 2px; }
@@ -12723,3 +12724,11 @@ button.active {
   @media (min-width: 992px) {
     .footer-margin-var-1 {
       margin-top: 160px; } }
+.logo-image {
+    background-image: url("../images/logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+    height: 90px;
+    width: 150px;
+}
