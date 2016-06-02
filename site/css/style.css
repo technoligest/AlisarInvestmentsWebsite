@@ -1252,7 +1252,7 @@ body {
   line-height: 1.7;
   -webkit-text-size-adjust: none;
   color: #231f20;
-  background: #e1d8cc; }
+  background: #fff; }
   @media (min-width: 768px) and (max-width: 991px) {
     body {
       font-size: 18px; } }
@@ -1664,7 +1664,7 @@ html .inset-4 {
     position: relative; } }
 
 .caption {
-  background: #fff;
+  background: #2b2b2b;
   margin-left: 5px;
   margin-right: 5px;
   padding: 30px 12px 30px; }
@@ -1788,14 +1788,22 @@ html body .page {
   .bg-white:before {
     content: '';
     display: inline-block;
-    background: #fff;
+    background: rgba(29, 27, 27, 0.48);
     position: absolute;
     top: 0;
     bottom: 0;
     left: 15px;
     right: 15px;
     z-index: -1; }
-
+    h2.text-bold {
+        color: #fff;
+    }
+    .bg-white p {
+    color: #fff;
+}
+.bg-white a {
+    color: white;
+}
 /*
 * @subsection   Floating System
 */
@@ -1850,9 +1858,15 @@ html body .page {
 .text-left {
   text-align: left; }
 
-.text-center {
-  text-align: center; }
+  .text-center {
+      text-align: center;
+  }
+  //*zaher*///
 
+  h3.text-bold {
+    color: white;
+}
+//**///
 .text-right {
   text-align: right; }
 
@@ -8998,7 +9012,7 @@ html:not(.lt-ie10) .not-animated {
   transition: 0.3s;
   transition-delay: .2s;
   border-radius: 2px;
-  border: 2px solid #5dbae2;
+  border: 2px solid #444;
   min-width: 200px;
   padding-left: 20px;
   padding-right: 20px; }
@@ -10170,7 +10184,7 @@ div.drag {
   bottom: 0;
   right: 0;
   left: 0;
-  background: #e1d8cc;
+  background: #929191 ;
   z-index: 1; }
 .rd-navbar-static .rd-navbar-brand, .rd-navbar-static .rd-navbar-nav > li > a, .rd-navbar-static .rd-navbar-search-toggle, .rd-navbar-fullwidth .rd-navbar-brand, .rd-navbar-fullwidth .rd-navbar-nav > li > a, .rd-navbar-fullwidth .rd-navbar-search-toggle {
   position: relative;
@@ -12731,4 +12745,27 @@ button.active {
     background-position-y: 8px;
     height: 90px;
     width: 150px;
+}
+
+h3.text-bold {
+    color: white;
+}
+.caption p {
+  color: #7a7a7a;
+      min-height: 128px;
+}
+.hvr-border-fade{
+  border-color: #444;
+}
+.hvr-border-fade:hover{
+  border-color: #fff;
+}
+a.btn.btn-sm.hvr-border-fade {
+    color: white;
+}
+.rd-navbar.rd-navbar-static {
+    color: white;
+}
+nav.rd-navbar.rd-navbar--is-clone.rd-navbar-static.rd-navbar--is-stuck{
+  color: #fff;
 }
