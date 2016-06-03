@@ -1252,7 +1252,8 @@ body {
   line-height: 1.7;
   -webkit-text-size-adjust: none;
   color: #231f20;
-  background: #fff; }
+/*  background: #fff;*/
+}
   @media (min-width: 768px) and (max-width: 991px) {
     body {
       font-size: 18px; } }
@@ -1664,7 +1665,8 @@ html .inset-4 {
     position: relative; } }
 
 .caption {
-  background: #2b2b2b;
+  background: #fff;
+    border:1px solid #000;
   margin-left: 5px;
   margin-right: 5px;
   padding: 30px 12px 30px; }
@@ -1771,7 +1773,8 @@ html body .page {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1; }
+    z-index: -1;
+margin-top: -70px;}
   @media (max-width: 1300px) {
     .bg-image:after {
       content: '';
@@ -9927,7 +9930,8 @@ div.drag {
 */
 .rd-navbar {
   display: none;
-  background: #e1d8cc; }
+/*  background: #e1d8cc; */
+}
 
 .rd-navbar-toggle {
   display: inline-block;
@@ -10184,7 +10188,7 @@ div.drag {
   bottom: 0;
   right: 0;
   left: 0;
-  background: #929191 ;
+/*  background: #929191 ;*/
   z-index: 1; }
 .rd-navbar-static .rd-navbar-brand, .rd-navbar-static .rd-navbar-nav > li > a, .rd-navbar-static .rd-navbar-search-toggle, .rd-navbar-fullwidth .rd-navbar-brand, .rd-navbar-fullwidth .rd-navbar-nav > li > a, .rd-navbar-fullwidth .rd-navbar-search-toggle {
   position: relative;
@@ -12767,5 +12771,6 @@ a.btn.btn-sm.hvr-border-fade {
     color: white;
 }
 nav.rd-navbar.rd-navbar--is-clone.rd-navbar-static.rd-navbar--is-stuck{
-  color: #fff;
+  color: #000;
+    background-color: white;
 }
