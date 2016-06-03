@@ -2,7 +2,7 @@
 <html lang="en" class="wide smoothscroll wow-animation">
 <head>
     <!-- Site Title -->
-    <title>Photo Gallery</title>
+    <title>Contacts</title>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
@@ -44,7 +44,7 @@
                         <!-- END RD Navbar Toggle -->
                         <!-- RD Navbar Brand -->
                         <div class="rd-navbar-brand">
-                            <a href="index.html" class="brand-name primary-color">
+                            <a href="default.html" class="brand-name primary-color">
                                 <span class="text-ubold text-uppercase">Lawn Care</span>
                             </a>
                         </div>
@@ -55,7 +55,7 @@
                     </div>
                     <!-- END RD Navbar Panel -->
                     <div class="top-header">
-                        <a class="brand" href="index.html">Lawn Care </a>
+                        <a class="brand" href="default.html">Lawn Care </a>
                         <dl class="rd-navbar-info">
                             <dt>Call us:</dt>
                             <dd class="text-bold">
@@ -67,13 +67,13 @@
                         <!-- RD Navbar Nav -->
                         <ul class="rd-navbar-nav">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="default.html">Home</a>
                             </li>
                             <li>
-                                <a href="index-1.html">About us</a>
+                                <a href="aboutus.html">About us</a>
 
                                 <!-- RD Navbar Dropdown -->
-                                <ul class="rd-navbar-dropdown">
+                                <!-- <ul class="rd-navbar-dropdown">
                                             <li>
                                                 <a href='#'>News</a>
                                             </li>
@@ -85,21 +85,20 @@
                                                     <li><a href="#">Archive</a></li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <a href='#'>Contacts</a>
-                                            </li>
-                                </ul>
+                                    <li>
+                                        <a href='#'>Contacts</a>
+                                    </li>
+                                    </ul> -->
+                                    </li>
                                 <!-- END RD Navbar Dropdown -->
-
+                            <li>
+                                <a href="services.html">Services</a>
                             </li>
                             <li>
-                                <a href="index-2.html">Services</a>
+                                <a href="photogallery.html">Photo Gallery</a>
                             </li>
                             <li class="active">
-                                <a href="index-3.html">Photo Gallery</a>
-                            </li>
-                            <li>
-                                <a href="index-4.html">Contacts</a>
+                                <a href="contacts.html">Contacts</a>
                             </li>
                         </ul>
                         <!-- END RD Navbar Nav -->
@@ -113,121 +112,82 @@
                               CONTENT
     =========================================================-->
     <main class="page-content">
-        <!-- Gallery -->
-        <section class="well-lg">
-        <div class="container text-center text-md-left">
-            <div class="isotope-filters">
-                <button data-isotope-filter="*" data-isotope-group="gallery">
-                    show all
-                </button>
-                <button data-isotope-filter="type-1" data-isotope-group="gallery" class="preffix-1">
-                    first category
-                </button>
-                <button data-isotope-filter="type-2" data-isotope-group="gallery" class="preffix-1">
-                    second category
-                </button>
-                <button data-isotope-filter="type-3" data-isotope-group="gallery" class="preffix-1">
-                    third category
-                </button>
-        </div>
+        <section>
+            <div class="container bg-white well-md-var-2 contact-margin text-md-left text-center">
+                <div class="row">
+                    <div class="col-md-8 col-md-preffix-1">
+                        <h2 class="text-bold">Contact form</h2>
+                 </div>
+                    <div class="col-md-10 col-md-preffix-1">
+                            <!-- RD Mailform -->
+                            <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
+                                <!-- RD Mailform Type -->
+                                <input type="hidden" name="form-type" value="contact"/>
+                                <!-- END RD Mailform Type -->
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="block-1">
+                                    <label data-add-placeholder>
+                                        <input type="text"
+                                               name="name"
+                                               placeholder="Name*"
+                                               data-constraints="@NotEmpty @LettersOnly"/>
+                                    </label>
 
-            <div class="row row-no-gutter isotope"
-                 data-isotope-group="gallery"
-                 data-isotope-layout="fitRows"
-                 data-lightbox="gallery">
-                <div class="col-md-6 col-sm-6" data-filter="type-3">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-01_original.jpg">
-                        <img src="images/gallery-01.jpg"  width="600" height="510" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
+                                    <label data-add-placeholder class="offset-11">
+                                        <input type="text"
+                                               name="email"
+                                               placeholder="Email*"
+                                               data-constraints="@NotEmpty @Email"/>
+                                    </label>
+
+                                    <label data-add-placeholder class="offset-11">
+                                        <input type="text"
+                                               name="phone"
+                                               placeholder="Phone"
+                                               data-constraints="@Phone"/>
+                                    </label>
+                                    </div>
+                                        <div class="block-2 offset-11">
+                                    <label data-add-placeholder>
+                                        <textarea name="message" placeholder="Message*"
+                                                  data-constraints="@NotEmpty"></textarea>
+                                    </label>
+                                        </div>
+                                    <div class="mfControls text-center">
+                                        <button class="btn btn-sm-var-1 btn-sm btn-aylen text-bold text-uppercase" type="submit">submit message</button>
+                                    </div>
+                                    <div class="mfInfo">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <!-- END RD Mailform -->
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-sm-6" data-filter="type-3">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-02_original.jpg">
-                        <img src="images/gallery-02.jpg" width="570" height="510" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-                <div class="col-md-4 col-sm-4" data-filter="type-2">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-03_original.jpg">
-                        <img src="images/gallery-03.jpg" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-                <div class="col-md-4 col-sm-4" data-filter="type-2">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-04_original.jpg">
-                        <img src="images/gallery-04.jpg" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-                <div class="col-md-4 col-sm-4" data-filter="type-2">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-05_original.jpg">
-                        <img src="images/gallery-05.jpg" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-                <div class="col-md-6 col-sm-6" data-filter="type-1">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-06_original.jpg">
-                        <img src="images/gallery-06.jpg" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-                <div class="col-md-6 col-sm-6" data-filter="type-1">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-07_original.jpg">
-                        <img src="images/gallery-07.jpg" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-                <div class="col-md-4 col-sm-4" data-filter="type-2">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-08_original.jpg">
-                        <img src="images/gallery-08.jpg" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-                <div class="col-md-4 col-sm-4" data-filter="type-2">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-09_original.jpg">
-                        <img src="images/gallery-09.jpg" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-                <div class="col-md-4 col-sm-4" data-filter="type-2">
-                    <!-- Magnific Popup Image -->
-                    <a class="thumb" data-lightbox="image" href="images/gallery-10_original.jpg">
-                        <img src="images/gallery-10.jpg" alt=""/>
-                        <span class="thumb__overlay fa fa-search"></span>
-                    </a>
-                    <!-- END Magnific Popup Image -->
-                </div>
-            </div>
-        </div>
         </section>
-        <!-- END Gallery-->
+        <!-- RD Google Map -->
+        <div class="rd-google-map rd-google-map-var-1">
+            <div id="google-map" class="rd-google-map__model" data-zoom="14" data-x="-73.9874068"
+                 data-y="40.643180"></div>
+            <ul class="rd-google-map__locations">
+                <li data-x="-73.9874068" data-y="40.643180">
+                    <p>9870 St Mary Place,<br>
+                        London, DC 45 Fr 45.</p>
+                </li>
+            </ul>
+        </div>
+        <!-- END RD Google Map -->
     </main>
     <!--========================================================
                               FOOTER
     ==========================================================-->
     <footer class="page-footer">
-        <div class="container footer-bg text-center text-md-left">
+        <div class="container footer-bg text-center text-md-left footer-margin">
             <div class="row">
                 <div class="col-md-11 col-md-preffix-1">
-                    <h4><a href="index.html">Lawn Care</a></h4>
+                    <h4><a href="default.html">Lawn Care</a></h4>
                 </div>
                 <div class="col-md-4 col-md-preffix-1 offset-6">
                     <p class="text-bold">Contact us</p>
@@ -254,11 +214,11 @@
                 <div class="col-md-3 offset-6 inset-1">
                     <p class="text-bold">Menu</p>
                     <ul class="footer_menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index-1.html">About Us</a></li>
-                        <li><a href="index-2.html">Services</a></li>
-                        <li  class="active"><a href="index-3.html">Photo Gallery</a></li>
-                        <li><a href="index-4.html">Contacts</a></li>
+                        <li><a href="default.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="photogallery.html">Photo Gallery</a></li>
+                        <li class="active"><a href="contacts.html">Contacts</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 offset-6 inset-2">
@@ -275,7 +235,7 @@
                 <div class="col-md-11 col-md-preffix-1 offset-7">
                     <p class="small">
                         Lawn Care  	&#169;  <span id="copyright-year"> 2016</span> All rights reserved.<br class="visible-block hidden-md">
-                       <span class="text-white"><a href="#"> Terms of use </a>| <a href='index-5.html'>Privacy Policy</a></span>
+                       <span class="text-white"><a href="#"> Terms of use </a>| <a href='privacypolicy.html'>Privacy Policy</a></span>
                     </p>
                 </div>
             </div>
