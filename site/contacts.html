@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="wide smoothscroll wow-animation">
 <head>
     <!-- Site Title -->
@@ -127,36 +127,45 @@
                                 <fieldset>
                                     <div class="row">
                                         <div class="block-1">
-                                    <label data-add-placeholder>
-                                        <input type="text"
-                                               name="name"
-                                               placeholder="Name*"
-                                               data-constraints="@NotEmpty @LettersOnly"/>
-                                    </label>
+                                            <label data-add-placeholder>
+                                                <input type="text"
+                                                       name="name"
+                                                       placeholder="Name*"
+                                                       data-constraints="@NotEmpty @LettersOnly"/>
+                                            </label>
+                                            <label data-add-placeholder>
+                                                <input type="text"
+                                                       name="address"
+                                                       placeholder="Address*"
+                                                       data-constraints="@NotEmpty"/>
+                                            </label>
 
-                                    <label data-add-placeholder class="offset-11">
-                                        <input type="text"
-                                               name="email"
-                                               placeholder="Email*"
-                                               data-constraints="@NotEmpty @Email"/>
-                                    </label>
+                                            <label data-add-placeholder class="offset-11">
+                                                <input type="text"
+                                                       name="email"
+                                                       placeholder="Email*"
+                                                       data-constraints="@NotEmpty @Email"/>
+                                            </label>
 
-                                    <label data-add-placeholder class="offset-11">
-                                        <input type="text"
-                                               name="phone"
-                                               placeholder="Phone"
-                                               data-constraints="@Phone"/>
-                                    </label>
-                                    </div>
-                                        <div class="block-2 offset-11">
-                                    <label data-add-placeholder>
-                                        <textarea name="message" placeholder="Message*"
-                                                  data-constraints="@NotEmpty"></textarea>
-                                    </label>
+                                            <label data-add-placeholder class="offset-11">
+                                                <input type="text"
+                                                   name="phone"
+                                                   placeholder="Phone"
+                                                   data-constraints="@Phone"/>
+                                            </label>
                                         </div>
-                                    <div class="mfControls text-center">
-                                        <button class="btn btn-sm-var-1 btn-sm btn-aylen text-bold text-uppercase" type="submit">submit message</button>
-                                    </div>
+                                        <!--Message text field-->
+                                        <div class="block-2 offset-12">
+                                            <label data-add-placeholder>
+                                                <textarea name="message" placeholder="Message*"
+                                                          data-constraints="@NotEmpty"></textarea>
+                                            </label>
+                                        </div>
+                                        
+                                        <!--SUBMIT BUTTON-->
+                                        <div class="mfControls text-center">
+                                            <button class="btn btn-sm-var-1 btn-sm btn-aylen text-bold text-uppercase" type="submit">submit message</button>
+                                        </div>
                                     <div class="mfInfo">
                                         </div>
                                     </div>

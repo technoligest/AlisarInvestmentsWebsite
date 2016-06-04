@@ -1,6 +1,6 @@
 <?php
 
-$recipients = '';
+$recipients = 'yaser.alkayale@dal.ca';
 
 try {
     require './phpmailer/PHPMailerAutoload.php';
@@ -49,6 +49,12 @@ try {
         $template = str_replace(
             array("<!-- #{MessageState} -->", "<!-- #{MessageDescription} -->"),
             array("Message:", $_POST['message']),
+            $template);
+    }
+    if (isset($_POST['address'])) {
+        $template = str_replace(
+            array("<!-- #{AddressState} -->", "<!-- #{AddressDescription} -->"),
+            array("Address:", $_POST['address']),
             $template);
     }
 

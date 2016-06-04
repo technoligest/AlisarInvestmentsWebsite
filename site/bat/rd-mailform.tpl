@@ -161,6 +161,14 @@
                                 <!-- #{MessageDescription} -->   
                                 </td>
                               </tr>
+                                 <tr>
+                                <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 20px; font-weight: 400;color: #302f35;font-weight: 700;"><!-- #{AdressState} --></td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 20px; font-weight: 400;color: #302f35;">
+                                <!-- #{AdressDescription} -->   
+                                </td>
+                              </tr>
                             </table>
                           </td>
                         </tr>
