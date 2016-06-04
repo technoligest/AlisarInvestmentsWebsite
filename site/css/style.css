@@ -4364,6 +4364,17 @@ html:not(.lt-ie10) .not-animated {
   -moz-osx-font-smoothing: grayscale; }
 
 /* makes the font 33% larger relative to the icon container */
+.fa-sm{
+/*
+    font-size: 0.8em;
+    line-height: 2em;
+    vertical-align: 1%;
+*/
+    font-size: .7em;
+  line-height: 0.75em;
+  vertical-align: 25%;
+}
+
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
@@ -11728,14 +11739,42 @@ html.boxed .rd-navbar--is-clone {
   text-decoration: none;
   z-index: 20;
   -webkit-transform: translateY(100px);
-  transform: translateY(100px); }
+  transform: translateY(100px);
+
+ 
+
+}
+
   .ui-to-top:hover {
+
     color: #FFF;
     background: #67b746;
-    text-decoration: none; }
-  .ui-to-top.active {
+    text-decoration: none;
+ 
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: scale(2);
+    transform: scale(2)
+ }
+
+.ui-to-top.active {
     -webkit-transform: translateY(0);
-    transform: translateY(0); }
+    transform: translateY(0);
+}
+.ui-to-top.active:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
 
 .mobile .ui-to-top,
 .tablet .ui-to-top {
