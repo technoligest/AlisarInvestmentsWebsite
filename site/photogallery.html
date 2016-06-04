@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="wide smoothscroll wow-animation">
 <head>
     <!-- Site Title -->
@@ -48,9 +48,11 @@
                                 <span class="text-ubold text-uppercase">Lawn Care</span>
                             </a>
                         </div>
+<!--
                         <button  class="rd-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-info">
                             <span></span>
                         </button>
+-->
                         <!-- END RD Navbar Brand -->
                     </div>
                     <!-- END RD Navbar Panel -->
@@ -67,10 +69,10 @@
                         <!-- RD Navbar Nav -->
                         <ul class="rd-navbar-nav">
                             <li>
-                                <a href="default.html">Home</a>
+                                <a href="default.html" class="hvr-overline-reveal">Home</a>
                             </li>
                             <li>
-                                <a href="aboutus.html">About us</a>
+                                <a href="aboutus.html" class="hvr-overline-reveal">About us</a>
 
                                 <!-- RD Navbar Dropdown -->
                                 <!-- <ul class="rd-navbar-dropdown">
@@ -93,13 +95,13 @@
 
                             </li>
                             <li>
-                                <a href="services.html">Services</a>
+                                <a href="services.html" class="hvr-overline-reveal">Services</a>
                             </li>
                             <li class="active">
-                                <a href="photogallery.html">Photo Gallery</a>
+                                <a href="photogallery.html" class="hvr-overline-reveal">Photo Gallery</a>
                             </li>
                             <li>
-                                <a href="contacts.html">Contacts</a>
+                                <a href="contacts.html" class="hvr-overline-reveal">Contacts</a>
                             </li>
                         </ul>
                         <!-- END RD Navbar Nav -->
@@ -116,20 +118,30 @@
         <!-- Gallery -->
         <section class="well-lg">
         <div class="container text-center text-md-left">
-            <div class="isotope-filters">
-                <button data-isotope-filter="*" data-isotope-group="gallery">
+            <div class="isotope-filters row">
+                <button data-isotope-filter="*" data-isotope-group="gallery" class="btn btn-xs  text-bold twelve">
                     show all
                 </button>
-                <button data-isotope-filter="type-1" data-isotope-group="gallery" class="preffix-1">
+            </div>
+            <div class="isotope-filters row">
+                <div class="one"></div>
+                <button data-isotope-filter="type-1" data-isotope-group="gallery" class="btn btn-xs  text-bold three">
                     first category
                 </button>
-                <button data-isotope-filter="type-2" data-isotope-group="gallery" class="preffix-1">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="one"></div>
+                <button data-isotope-filter="type-2" data-isotope-group="gallery" class="btn btn-xs  text-bold three">
                     second category
                 </button>
-                <button data-isotope-filter="type-3" data-isotope-group="gallery" class="preffix-1">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="one"></div>
+                <button data-isotope-filter="type-3" data-isotope-group="gallery" class="btn btn-xs  text-bold three">
                     third category
                 </button>
-        </div>
+                <div class="one"></div>
+            </div>
 
             <div class="row row-no-gutter isotope"
                  data-isotope-group="gallery"
@@ -234,20 +246,22 @@
 
                     <div class="contact-info">
                         <dl>
-                            <dt>Freephone</dt>
-                            <dd><a href="callto:#">+1 800 559 6580</a></dd>
+                            <dt>Telephone</dt>
+                            <dd><a href="callto:#">(902) 452 1113</a></dd>
                         </dl>
                         <dl>
                             <dt>Telephone</dt>
-                            <dd><a href="callto:#">+1 800 603 6035 </a></dd>
+                            <dd><a href="callto:#">(902) 441 5003 </a></dd>
                         </dl>
+<!--
                         <dl>
                             <dt>FAX</dt>
                             <dd><a href="callto:#"> +1 800 889 9898</a></dd>
                         </dl>
+-->
                         <dl>
                             <dt>E-mail</dt>
-                            <dd><a href="mailto:#" class="mail">mail@demolink.org</a></dd>
+                            <dd><a href="mailto:#" class="mail">info@alisar.ca</a></dd>
                         </dl>
                     </div>
                 </div>
@@ -264,10 +278,10 @@
                 <div class="col-md-4 offset-6 inset-2">
                     <p class="text-bold">We are social</p>
                     <ul class="inline-list">
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-youtube"></a></li>
-                        <li><a href="#" class="fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-lg fa-facebook hvr-grow-x2" ></a></li>
+                        <li><a href="#" class="fa fa-lg fa-twitter hvr-grow-x2"></a></li>
+                        <li><a href="#" class="fa fa-lg fa-youtube hvr-grow-x2"></a></li>
+                        <li><a href="#" class="fa fa-lg fa-instagram hvr-grow-x2"></a></li>
                     </ul>
                      <p class="text-bold">Still have questions?</p>
                     <a href="#" class="btn btn-xs btn-aylen-2 text-bold">Send request ›</a>
