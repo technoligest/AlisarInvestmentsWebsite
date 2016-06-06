@@ -10572,7 +10572,9 @@ div.drag {
       display: inline-block;
       margin-left: 2px; }
     .rd-navbar-static .rd-navbar-nav li + li {
-      margin-left: 154px; }
+/*change the margin-left to handel the logo from 154px */
+      margin-left: 135px;
+    }
       @media (min-width: 4000px) {
         .rd-navbar-static .rd-navbar-nav li + li {
           margin-left: 113px; } }
@@ -11747,7 +11749,7 @@ html.boxed .rd-navbar--is-clone {
   -webkit-transform: translateY(100px);
   transform: translateY(100px);
 
- 
+
 
 }
 
@@ -11756,7 +11758,7 @@ html.boxed .rd-navbar--is-clone {
     color: #FFF;
     background: #67b746;
     text-decoration: none;
- 
+
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
@@ -12620,7 +12622,7 @@ img.mfp-img {
     width: 33%; }
 
 .isotope-filters {
-  padding: 20px 20px; 
+  padding: 20px 20px;
 text-align: center;}
   @media (min-width: 992px) {
     .isotope-filters {
@@ -12744,11 +12746,11 @@ button.active {
 }
 @media (min-width: 768px) {
   .page-content .box__body {
-    padding-top: 18px 
+    padding-top: 18px
     }
 }
 .page-content .isotope{
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 /*
@@ -12825,7 +12827,7 @@ button.active {
 .bg-white.well-md {
     background-color: #333132;
     color: white;
-    
+
 }
 .blank {
     height: 10em;
@@ -12869,7 +12871,7 @@ button.active {
   transform: translateY(0);
 }
 li.active a:before {
-     -webkit-transform: translateY(0); 
+     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
@@ -12933,5 +12935,12 @@ h2.text-bold.overflow.inset-4 {
 
 /*changing the colour for the headers in privacy policy and termsofuse*/
 dt.heading-2.text-bold, h1.text-center.pp-header{
-    color:black; 
+    color:black;
+}
+.logo{
+  padding: 0px !important;
+}
+.logo {/* you can change width from 138 - 148 */
+    width: 148px;
+    padding-top: 1px !important;
 }
