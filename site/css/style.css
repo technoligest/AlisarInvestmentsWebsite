@@ -9611,7 +9611,8 @@ section {
     top: 0;
     bottom: 0;
     right: 0;
-    background: rgba(62, 160, 199, 0.74);
+    background:  rgba(76, 175, 80, 0.74);
+    /*original Value background: rgba(62, 160, 199, 0.74);*/
     opacity: 0;
     text-align: center;
     transition: .3s all ease; }
