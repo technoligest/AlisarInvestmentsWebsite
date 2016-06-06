@@ -9040,7 +9040,7 @@ html:not(.lt-ie10) .not-animated {
   .btn-aylen-1::before, .btn-aylen-1::after {
     content: '';
     position: absolute;
-    height: 102%;
+    height: 100%;
     bottom: 100%;
     left: 0;
     right: 0;
@@ -9678,7 +9678,8 @@ section {
       vertical-align: middle;
       -webkit-transform: translateY(30px);
       transform: translateY(30px);
-      transition: .3s all ease; }
+      transition: .3s all ease;
+     }
   .subnail:hover .subnail__overlay {
     opacity: 1; }
     .subnail:hover .subnail__overlay > * {
@@ -12823,6 +12824,7 @@ button.active {
 }
 .caption.text-center {
     border: 1px solid rgba(102, 187, 106, 1);
+    border-top: 0px;
     box-shadow: 0px 0px 2px rgb(102, 187, 106);
 }
 .bg-white.well-md {
