@@ -1704,10 +1704,12 @@ html .inset-4 {
 .block span {
   transition: 0.3s;
   color: #4caf50; }
+/*
 .block:hover span {
   color: #66bb6a; }
 .block a:hover {
   color: #66bb6a; }
+*/
 
 .block-1, .block-2 {
   display: block; }
@@ -1791,7 +1793,8 @@ html body .page {
     bottom: 0;
     right: 0;
     z-index: -1;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+    background-position: center;}
   @media (max-width: 1300px) {
     .bg-image:after {
       content: '';
@@ -10644,7 +10647,7 @@ html.rd-navbar-fixed-linked body {
     height: 56px;
     color: #231f20;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.12), 3px 4px 8px 0px rgba(0, 0, 0, 0.11);
-    z-index: 999; }
+    z-index: 9999; }
     .rd-navbar-fixed .rd-navbar-panel:before {
       content: '';
       position: absolute;
@@ -11678,7 +11681,7 @@ html.boxed .rd-navbar--is-clone {
         height: 250px; } }
     @media (min-width: 1200px) {
       .rd-google-map__model {
-        height: 1200px; } }
+        height: 700px; } }
   .rd-google-map__locations {
     display: none; }
   .rd-google-map p {
@@ -12822,9 +12825,7 @@ button.active {
 .bg-white.well-md {
     background-color: #333132;
     color: white;
-    -webkit-box-shadow: 0px -4px 12px 8px #333132;
-    -moz-box-shadow: 0px -4px 12px 8px #333132;
-    box-shadow: 0px -4px 12px 8px #333132;
+    
 }
 .blank {
     height: 10em;
@@ -12911,4 +12912,26 @@ li.active a:before {
 
 .isotope-filters.row {
     margin-top: -0px;
+}
+
+/*the background for the contact form in the contact page*/
+section.contact-background {
+    background-image: url(../images/GreenGrass.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+/*the header of the cards on the main page*/
+.well-sm .text-center h3.text-bold {
+    color: black;
+}
+
+/*the headers of the numbered things in the about us page*/
+h2.text-bold.overflow.inset-4 {
+    color:black;
+}
+
+/*changing the colour for the headers in privacy policy and termsofuse*/
+dt.heading-2.text-bold, h1.text-center.pp-header{
+    color:black; 
 }
