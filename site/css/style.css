@@ -95,10 +95,13 @@ input[type='submit'] {
   border-right: 1px solid transparent;
   border-bottom-left-radius: 1px !important; }
 
+
 *,
 *:before,
 *:after {
   box-sizing: border-box; }
+
+
 
 a,
 a[href^="tel:"],
@@ -10567,8 +10570,10 @@ div.drag {
     text-align: right;
     display: block; /* to riper the nav bar*/
   }
+/*
   .rd-navbar-static .rd-navbar-nav {
     margin-left: -2px; }
+*/
     .rd-navbar-static .rd-navbar-nav > li {
       display: inline-block;
       margin-left: 2px; }
@@ -12942,6 +12947,12 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
   padding: 0px !important;
 }
 .logo {/* you can change width from 138 - 148 */
-    width: 148px;
+    width: 138px;
     padding-top: 1px !important;
+}
+/*to accommodate for the logo in the navbar*/
+.rd-navbar-inner,
+.rd-navbar-inner:before,
+.rd-navbar-inner:after{
+    box-sizing:content-box;
 }
