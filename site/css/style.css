@@ -9043,7 +9043,7 @@ html:not(.lt-ie10) .not-animated {
   .btn-aylen-1::before, .btn-aylen-1::after {
     content: '';
     position: absolute;
-    height: 102%;
+    height: 100%;
     bottom: 100%;
     left: 0;
     right: 0;
@@ -9681,7 +9681,8 @@ section {
       vertical-align: middle;
       -webkit-transform: translateY(30px);
       transform: translateY(30px);
-      transition: .3s all ease; }
+      transition: .3s all ease;
+     }
   .subnail:hover .subnail__overlay {
     opacity: 1; }
     .subnail:hover .subnail__overlay > * {
@@ -12828,6 +12829,7 @@ button.active {
 }
 .caption.text-center {
     border: 1px solid rgba(102, 187, 106, 1);
+    border-top: 0px;
     box-shadow: 0px 0px 2px rgb(102, 187, 106);
 }
 .bg-white.well-md {
@@ -12946,6 +12948,7 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
 .logo{
   padding: 0px !important;
 }
+
 .logo {/* you can change width from 138 - 148 */
     width: 138px;
     padding-top: 1px !important;
@@ -12955,4 +12958,51 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
 .rd-navbar-inner:before,
 .rd-navbar-inner:after{
     box-sizing:content-box;
+}
+
+
+
+/* Sweep To Bottom */
+.hvr-sweep-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+  color:#000 !important;
+}
+.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+>>>>>>> be57229f6121a3fc61e08611bdfe5db2c4d01c82
 }
