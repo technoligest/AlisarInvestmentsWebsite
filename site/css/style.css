@@ -10254,8 +10254,10 @@ div.drag {
 .rd-navbar-static .rd-navbar-inner, .rd-navbar-fullwidth .rd-navbar-inner {
   position: relative;
   max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
+  padding-left: 0px;
+  padding-right: 0px;
   margin-left: auto;
   margin-right: auto; }
 .rd-navbar-static .rd-navbar-nav > li > .rd-navbar-dropdown, .rd-navbar-fullwidth .rd-navbar-nav > li > .rd-navbar-dropdown {
