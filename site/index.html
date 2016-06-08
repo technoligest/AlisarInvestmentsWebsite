@@ -14,6 +14,7 @@
     <!--[if lt IE 10]>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
+
 </head>
 <body>
 <!-- The Main Wrapper -->
@@ -301,9 +302,26 @@
 </div>
 
 <!-- Core Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/core.min.js"></script>
 <!-- Additional Functionality Scripts -->
 <script src="js/script.js"></script>
+<script>
+$(function() {
+$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+});
+</script>
 </body>
 </html>
 
