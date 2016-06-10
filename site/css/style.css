@@ -10570,7 +10570,8 @@ div.drag {
     min-width: 300px; }
   .rd-navbar-static .rd-navbar-nav-wrap {
     width: 100%;
-    text-align: right;
+  /*  text-align: right;*/
+  text-align: center;
     display: block; /* to riper the nav bar*/
   }
 /*
