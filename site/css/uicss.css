@@ -40,3 +40,7 @@ input[type="text"]:focus{
     margin-top: 1em;
     margin-bottom: 2em;
 }
+.fancybox-item.fancybox-close {
+    margin-right: 25px;
+    margin-top: 25px;
+}
