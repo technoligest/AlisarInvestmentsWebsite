@@ -160,7 +160,7 @@ function isIE() {
                                 message: 'Please use only numbers.'
                             },
                             '@NotEmpty': {
-                                message: 'This field should not be empty.'
+                                message: ''//This field should not be empty.
                             },
                             '@Email': {
                                 message: 'Enter valid e-mail address.'

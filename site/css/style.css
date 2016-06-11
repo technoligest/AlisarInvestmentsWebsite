@@ -1276,7 +1276,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 .heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
   display: block;
-  color: #fff;
+  color: #333;
   font-weight: 400; }
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
   .heading-1 a:hover, .heading-2 a:hover, .heading-3 a:hover, .heading-4 a:hover, .heading-5 a:hover, .heading-6 a:hover {
@@ -1801,7 +1801,7 @@ html body .page {
   @media (max-width: 1300px) {
     .bg-image:after {
       content: '';
-      background: rgba(35, 31, 32, 0.5);
+     
       top: 0;
       left: 0;
       right: 0;
@@ -8990,35 +8990,7 @@ html:not(.lt-ie10) .not-animated {
     margin-top: 30px;
     margin-left: 30px; }
 
-.btn-aylen {
-  font-weight: bold;
-  background: #76bf58;
-  color: #fff;
-  overflow: hidden;
-  transition: 0.3s;
-  transition-delay: .2s;
-  border: none; }
-  .btn-aylen::before, .btn-aylen::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    bottom: 100%;
-    left: 0;
-    z-index: -1;
-    transition: transform 0.3s;
-    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
-  .btn-aylen::before {
-    background: green; }
-  .btn-aylen::after {
-    background: #92dc72; }
-  .btn-aylen:hover {
-    color: #fff; }
-  .btn-aylen:hover::before, .btn-aylen:hover::after {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  .btn-aylen:hover::after {
-    transition-delay: 0.175s; }
+
 
 .lt-ie10 .btn-aylen:hover {
   background-color: #92dc72; }
@@ -9028,42 +9000,7 @@ html:not(.lt-ie10) .not-animated {
 .tablet .btn-aylen:hover {
   background-color: #92dc72; }
 
-.btn-aylen-1 {
-  font-weight: bold;
-  background: transparent;
-  color: #66bb6a;
-  overflow: hidden;
-  transition: 0.3s;
-  transition-delay: .2s;
-  border-radius: 2px;
-  border: 2px solid #66bb6a;
-  min-width: 200px;
-  padding-left: 20px;
-  padding-right: 20px; }
-  .btn-aylen-1::before, .btn-aylen-1::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    transition: transform 0.3s;
-    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-    border: none;
-    outline: none;
-    min-width: 205px; }
-  .btn-aylen-1::before {
-    background: #388e3c; }
-  .btn-aylen-1::after {
-    background: #66bb6a; }
-  .btn-aylen-1:hover {
-    color: #fff; }
-  .btn-aylen-1:hover::before, .btn-aylen-1:hover::after {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  .btn-aylen-1:hover::after {
-    transition-delay: 0.175s; }
+
 
 .lt-ie10 .btn-aylen-2:hover {
   background-color: #66bb6a; }
@@ -9078,8 +9015,7 @@ html:not(.lt-ie10) .not-animated {
   background: #333132;
   color: #fff;
   overflow: hidden;
-  transition: 0.3s;
-  transition-delay: .2s;
+  
   border-radius: 2px;
   border: 1px solid #6d6e71; }
   .btn-aylen-2::before, .btn-aylen-2::after {
@@ -9955,7 +9891,7 @@ div.drag {
 */
 .rd-navbar {
   display: none;
-  background: #fff
+  background: rgba(255,255,255,0.95);
   /*background: #e1d8cc; */
 }
 
@@ -11781,8 +11717,8 @@ html.boxed .rd-navbar--is-clone {
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transform: scale(2);
-    transform: scale(2)
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5)
  }
 
 .ui-to-top.active {
@@ -12903,10 +12839,11 @@ li.active a:before {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow-x2:hover, .hvr-grow-x2:focus, .hvr-grow-x2:active {
+.hvr-grow-x2:hover {
   -webkit-transform: scale(2);
   transform: scale(2);
 }
+
 /* column widths */
 .row .twelve      { width: 100%; }
 .row .one      { width: 0%; }
@@ -13007,5 +12944,49 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
 .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
->>>>>>> be57229f6121a3fc61e08611bdfe5db2c4d01c82
 }
+
+/*Buttons for the 4 cards on the front page*/
+.btn-aylen-1 {
+  font-weight: bold;
+  background: transparent;
+  color: #66bb6a;
+  overflow: hidden;
+
+  border-radius: 2px;
+  border: 2px solid #66bb6a;
+  min-width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;}
+
+.btn-aylen-1:focus, .btn-aylen-1:hover{
+
+
+    color: #fff;
+    border-color: transparent;
+    background-color: #66bb6a;
+}
+
+
+
+.btn-aylen {
+  font-weight: bold;
+  background: #76bf58;
+  color: #fff;
+  overflow: hidden;
+  
+  border: none; }
+.btn-aylen:focus, .btn-aylen:hover{
+
+    color: #fff;
+    border-color: transparent;
+    background-color: #5a9142;
+}
+
+#our-services-header{
+    color: white;
+}
+#contact-form-header{
+    color:white;
+}
+
