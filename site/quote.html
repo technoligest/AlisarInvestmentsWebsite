@@ -2,24 +2,14 @@
 <html lang="en" class="wide smoothscroll wow-animation">
 <head>
     <!-- Site Title -->
-    <title>Contact</title>
+    <title>Quote</title>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
     <!-- Stylesheets -->
     <link rel="icon" href="images/icon.png" type="image/x-icon">
     <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/uicss.css">
     <!--[if lt IE 10]>
     <script src="js/html5shiv.min.js"></script>
@@ -30,7 +20,12 @@
 <div class="page">
 
     <!--For older internet explorer-->
-
+    <div class="old-ie" style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
     <!--END block for older internet explorer-->
 
     <!--========================================================
@@ -45,158 +40,83 @@
                               CONTENT
     =========================================================-->
     <main class="page-content">
-        <section>
-            <div class="container well-md-var-2 contact-margin text-md-left text-center">
+        <section >
+            <div class="container bg-white well-md-var-2 contact-margin text-md-left text-center">
                 <div class="row">
-                <div class="form-header col-md-12   col-sm-12 col-xs-12">
-                      <h2 class="text-bold">Quote form</h2>
+                    <div class="col-md-8 col-md-preffix-1">
+                        <h2 id="contact-form-header" class="text-bold">Quote form</h2>
                  </div>
-                    <div class="col-md-12  col-sm-12 col-xs-12 ">
+                    <div class="col-md-10 col-md-preffix-1">
                             <!-- RD Mailform -->
                             <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
                                 <!-- RD Mailform Type -->
-                                <input type="hidden" name="form-type" value="order"/>
+                                <input type="hidden" name="form-type" value="contact"/>
                                 <!-- END RD Mailform Type -->
                                 <fieldset>
-                                    <div class=" col-md-12  col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="block-1 offset-12">
+                                            <label data-add-placeholder>
+                                                <input type="text"
+                                                       name="name"
+                                                       placeholder="Name*"
+                                                       data-constraints="@NotEmpty @LettersOnly"/>
+                                            </label>
+                                            <label data-add-placeholder class="offset-11">
+                                                <input type="text"
+                                                       name="address"
+                                                       placeholder="Address*"
+                                                       data-constraints="@NotEmpty"/>
+                                            </label>
+                                            <label data-add-placeholder class="offset-11">
+                                                <input type="text"
+                                                       name="postal"
+                                                       placeholder="Postal*"
+                                                       data-constraints="@NotEmpty @PosatCode"/>
+                                            </label>
 
-                                        <label data-add-placeholder  class=" col-md-12  col-sm-12 col-xs-12 ">
-                                            <input type="text" class="col-md-12 col-sm-12 col-xs-12  "
-                                                   name="name"
-                                                   placeholder="Name*"
-                                                   data-constraints="@NotEmpty @LettersOnly"/>
-                                        </label>
+                                            <label data-add-placeholder class="offset-11">
+                                                <input type="text"
+                                                       name="email"
+                                                       placeholder="Email*"
+                                                       data-constraints="@NotEmpty @Email"/>
+                                            </label>
 
+                                            <label data-add-placeholder class="offset-11">
+                                                <input type="text"
+                                                   name="phone"
+                                                   placeholder="Phone"
+                                                   data-constraints="@Phone"/>
+                                            </label>
 
+                                        <!--Message text field-->
 
-                                        <label  data-add-placeholder class="col-md-12 col-sm-12 col-xs-12  ">
-                                            <input type="text" class="col-md-12 col-sm-12 col-xs-12  "
-                                                   name="email"
-                                                   placeholder="Email*"
-                                                   data-constraints="@NotEmpty @Email"/>
-                                        </label>
-
-                                        <label data-add-placeholder class="col-md-12  col-sm-12 col-xs-12  ">
-                                            <input type="text" class="col-md-12 col-sm-12 col-xs-12  "
-                                               name="phone"
-                                               placeholder="Phone"
-                                               data-constraints="@Phone"/>
-                                        </label>
-                                        <div class="col-md-12  col-sm-12 col-xs-12 no-padding">
-                                      <label  data-add-placeholder class="col-md-6  col-sm-6 col-xs-6 ">
-                                            <input type="text" class="col-md-12  col-sm-12 col-xs-12 "
-                                                   name="address2"
-                                                   placeholder="Address2*"
-                                                   data-constraints="@NotEmpty"/>
-                                        </label>
-
-
-                                      <label data-add-placeholder class="col-md-6  col-sm-6 col-xs-6 ">
-                                          <input type="text" class="col-md-12  col-sm-12 col-xs-12 "
-                                                 name="address1"
-                                                 placeholder="Address1*"
-                                                 data-constraints="@NotEmpty"/>
-                                      </label>
-</div>
-                                      <label  data-add-placeholder class="col-md-12 col-sm-12 col-xs-12">
-                                          <input type="text" class="col-md-12 col-sm-12 col-xs-12  "
-                                                 name="message"
-                                                 placeholder="Message*"
-                                                 data-constraints="@NotEmpty"/>
-                                      </label>
-
-
+                                            <label data-add-placeholder>
+                                                <textarea name="message" placeholder="Message*"
+                                                          data-constraints="@NotEmpty"></textarea>
+                                            </label>
 
 
                                         <!--SUBMIT BUTTON-->
-                                        <div class="col-md-12  col-sm-12 col-xs-12  btn-submit">
-                                            <button  type="submit" class="btn btn-success">submit message</button>
+                                        <div class="mfControls text-center">
+                                            <button class="btn btn-sm-var-1 btn-sm btn-aylen text-bold text-uppercase" type="submit">submit message</button>
                                         </div>
-                                    <div  >
+                                    <div class="mfInfo">
                                         </div>
+                                    </div>
                                     </div>
                                 </fieldset>
                             </form>
-                            <!-- END RD Mailform -->
                         </div>
                     </div>
                 </div>
         </section>
-        <!-- RD Google Map -->
-
-
-
-
-<!--
-            <ul class="rd-google-map__locations">
-                <li data-x="-73.9874068" data-y="40.643180">
-                    <p>9870 St Mary Place,<br>
-                        London, DC 45 Fr 45.</p>
-                </li>
-            </ul>
--->
-        </div>
-        <!-- END RD Google Map -->
     </main>
-    <!--========================================================
-                              FOOTER
-    ==========================================================-->
+</div>
 
 <!-- Core Scripts -->
 <script src="js/core.min.js"></script>
 <!-- Additional Functionality Scripts -->
-<script >
-/**
- * @module       RD Mailform
- * @description  Enables RD Mailform Plugin
- */
-
-(function ($) {
-    var o = $('.rd-mailform');
-    if (o.length > 0) {
-        $(document).ready(function () {
-            var o = $('.rd-mailform');
-            if (o.length) {
-                o.rdMailForm({
-                    validator: {
-                        'constraints': {
-                            '@LettersOnly': {
-                                message: 'Please use only letters.'
-                            },
-                            '@NumbersOnly': {
-                                message: 'Please use only numbers.'
-                            },
-                            '@NotEmpty': {
-                                message: ''//This field should not be empty.
-                            },
-                            '@Email': {
-                                message: 'Enter valid e-mail address.'
-                            },
-                            '@Phone': {
-                                message: 'Enter valid phone number.'
-                            },
-                            '@Date': {
-                                message: 'Use MM/DD/YYYY format.'
-                            },
-                            '@SelectRequired': {
-                                message: 'Please choose an option.'
-                            }
-                        }
-                    }
-                }, {
-                    'MF000': 'Sent',
-                    'MF001': 'Recipients are not set.',
-                    'MF002': 'Form will not work locally.',
-                    'MF003': 'Please define email field in your form.',
-                    'MF004': 'Please define the type of your form.',
-                    'MF254': 'Something went wrong with PHPMailer.',
-                    'MF255': 'There was an error submitting the form.'
-                });
-            }
-        });
-    }
-})(jQuery);
-</script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

@@ -163,16 +163,19 @@ function isIE() {
                                 message: ''//This field should not be empty.
                             },
                             '@Email': {
-                                message: 'Enter valid e-mail address.'
+                                message: 'Enter a valid e-mail address.'
                             },
                             '@Phone': {
-                                message: 'Enter valid phone number.'
+                                message: 'Enter a valid phone number.'
                             },
                             '@Date': {
                                 message: 'Use MM/DD/YYYY format.'
                             },
                             '@SelectRequired': {
                                 message: 'Please choose an option.'
+                            }
+                            ,'@PosatCode':{
+                              message: 'Enter a valid postal code.'
                             }
                         }
                     }

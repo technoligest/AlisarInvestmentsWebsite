@@ -7,9 +7,14 @@ body{
   width: 100%;
   max-height: 100px;
 }
-.col-md-12.col-sm-12.col-xs-12.no-padding {
-    padding-left: 0px;
-    padding-right: 0px;
+.container.bg-white.well-md-var-2.contact-margin.text-md-left.text-center {
+    padding-top: 0px !important;
+}
+#contact-form-header{
+  color: black;
+}
+.col-md-10.col-md-preffix-1 {
+    margin-top: 0px;
 }
 .text-bold{
     text-align: left;
@@ -17,28 +22,24 @@ body{
 .col-xs-12 {
     width: 100%;
 }
-.mfPlaceHolder {
-      outline: none;
-      font-size: 0.875em;
-      border-radius: 2px;
-      color: rgba(46,61,73,0.3);
-      transition: box-shadow 0.3s ease, border 0.3s ease;
-}
 
-input[type="text"]{
+input[type="text"],textarea{
   box-shadow:0 4px 8px 0 rgba(49, 73, 46, 0.1);
   height: 3em;
   margin: 0.2em;
   border: 1px solid #c8ddca;
 }
 
-input[type="text"]:focus{
+textarea{
+  min-height: 8em !important;
+}
+
+input[type="text"]:focus,textarea:focus{
 
   box-shadow:0 0px 6px 4px #5eff4680;;
 }
-.col-md-12.col-sm-12.col-xs-12.btn-submit {
-    margin-top: 1em;
-    margin-bottom: 2em;
+.mfPlaceHolder {
+  color:#a5b4a7;
 }
 .fancybox-item.fancybox-close {
     margin-right: 50px;
