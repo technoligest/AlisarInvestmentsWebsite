@@ -1801,7 +1801,7 @@ html body .page {
   @media (max-width: 1300px) {
     .bg-image:after {
       content: '';
-     
+
       top: 0;
       left: 0;
       right: 0;
@@ -9015,7 +9015,7 @@ html:not(.lt-ie10) .not-animated {
   background: #333132;
   color: #fff;
   overflow: hidden;
-  
+
   border-radius: 2px;
   border: 1px solid #6d6e71; }
   .btn-aylen-2::before, .btn-aylen-2::after {
@@ -10368,7 +10368,7 @@ div.drag {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999; }
+  z-index: 1; }
 
 .rd-navbar-fixed .rd-navbar-collapse-toggle, .rd-navbar-sidebar .rd-navbar-collapse-toggle {
   display: inline-block;
@@ -12972,7 +12972,7 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
   background: #76bf58;
   color: #fff;
   overflow: hidden;
-  
+
   border: none; }
 .btn-aylen:focus, .btn-aylen:hover{
 

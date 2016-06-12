@@ -9,6 +9,7 @@ body{
 }
 .container.bg-white.well-md-var-2.contact-margin.text-md-left.text-center {
     padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 #contact-form-header{
   color: black;
@@ -30,10 +31,6 @@ input[type="text"],textarea{
   border: 1px solid #c8ddca;
 }
 
-textarea{
-  min-height: 8em !important;
-}
-
 input[type="text"]:focus,textarea:focus{
 
   box-shadow:0 0px 6px 4px #5eff4680;;
@@ -41,7 +38,26 @@ input[type="text"]:focus,textarea:focus{
 .mfPlaceHolder {
   color:#a5b4a7;
 }
-.fancybox-item.fancybox-close {
+a.fancybox-item.fancybox-close {
     margin-right: 50px;
     margin-top: 50px;
+}
+form.rd-mailform {
+    margin: 0px;
+}
+label.offset-11.mfInput {
+    margin-top: 10px;
+}
+.mfInput {
+    margin-top: 10px !important;
+}
+.mfControls.text-center {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+textarea {
+    height: 3em !important;
+}
+.desktop .page-content {
+    min-height: 80vh;
 }
