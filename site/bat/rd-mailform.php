@@ -57,6 +57,12 @@ try {
             array("Address:", $_POST['address']),
             $template);
     }
+    if (isset($_POST['postal'])) {
+        $template = str_replace(
+            array("<!-- #{PostalState} -->", "<!-- #{PostalDescription} -->"),
+            array("postal:", $_POST['postal']),
+            $template);
+    }
 
     preg_match("/(<!-- #{BeginInfo} -->)(.|\n)+(<!-- #{EndInfo} -->)/", $template, $tmp, PREG_OFFSET_CAPTURE);
     foreach ($_POST as $key => $value) {
