@@ -12886,13 +12886,11 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
     color:black;
 }
 .logo{
-  padding: 0px !important;
-}
-
-.logo {/* you can change width from 138 - 148 */
-    width: 138px;
+    padding: 0px !important;
+    width: 138px;/* you can change width from 138 - 148 */
     padding-top: 1px !important;
 }
+
 /*to accommodate for the logo in the navbar*/
 .rd-navbar-inner,
 .rd-navbar-inner:before,
@@ -12989,4 +12987,3 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
 #contact-form-header{
     color:white;
 }
-
