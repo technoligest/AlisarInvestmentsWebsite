@@ -10516,7 +10516,7 @@ div.drag {
 */
     .rd-navbar-static .rd-navbar-nav > li {
       display: inline-block;
-      margin-left: 2px; }
+      margin-left: 0px; }
     .rd-navbar-static .rd-navbar-nav li + li {
 /*change the margin-left to handel the logo from 154px */
       margin-left: 135px;
@@ -12986,4 +12986,13 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
 }
 #contact-form-header{
     color:white;
+}
+
+
+/*making sure the navbar is on top of everything*/
+nav.rd-navbar.rd-navbar--is-clone.rd-navbar-static.rd-navbar--is-stuck {
+    z-index: 1000000;
+}
+ul.rd-navbar-nav {
+    padding-left: 0;
 }

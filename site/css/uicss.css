@@ -25,18 +25,17 @@ body{
 }
 
 input[type="text"],textarea{
-  box-shadow:0 4px 8px 0 rgba(49, 73, 46, 0.1);
-  height: 3em;
+  height: 2.5em;
   margin: 0.2em;
   border: 1px solid #c8ddca;
 }
 
 input[type="text"]:focus,textarea:focus{
 
-  box-shadow:0 0px 6px 4px #5eff4680;;
+  box-shadow:0 0px 6px 4px rgba(153, 220, 159, 0.5);
 }
 .mfPlaceHolder {
-  color:#a5b4a7;
+  color:rgba(118, 191, 88, 0.5);
 }
 a.fancybox-item.fancybox-close {
     margin-right: 50px;
@@ -60,4 +59,35 @@ textarea {
 }
 .desktop .page-content {
     min-height: 80vh;
+}
+
+
+.mfPlaceHolder{
+    font-size:0.875em;
+    padding-top: 9px;
+}
+
+.rd-mailform label input {
+    height: 2.5em;
+}
+
+
+.quote-header{
+    background: url("../images/grass_jpeg.jpg");
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: 150px;
+    color: white;
+}
+.quote-header-image{
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.quote-header-title{
+   font-size: 2.5em;
+    margin-top:-1em;
 }
