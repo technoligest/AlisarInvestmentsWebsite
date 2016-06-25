@@ -13013,16 +13013,9 @@ ul.rd-navbar-nav {
     padding-left: 0;
 }
 
-<<<<<<< HEAD
-=======
-section.well-md.bg-white{
-
-    padding-top: 0px;
-    padding-bottom: 0;}
 
 /*buttons in the photo gallery*/
-section.well-md.bg-white{
-
+section.well-md.bg-white.gallery-buttons{
     padding-top: 0px;
     padding-bottom: 0;
      padding-right: 0px;
