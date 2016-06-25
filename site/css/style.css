@@ -8875,7 +8875,7 @@ html:not(.lt-ie10) .not-animated {
 
 .btn-xs {
   border-width: 2px;
-  padding: 20px 31px;
+  padding: 15px 10px;
   font-size: 14px; }
   .btn-xs .icon {
     font-size: 20.8544px;
@@ -12846,9 +12846,25 @@ li.active a:before {
 
 /* column widths */
 .row .twelve      { width: 100%; }
-.row .one      { width: 0%; }
-.row .two         { width: 5%; }
-.row .three       { width: 30%; }
+.row .one         { width: 8.33%; }
+.row .two         { width: 16.66%; }
+.row .three       { width: 25%; }
+
+.row .three-2       { width: 25%; }
+
+@media (max-width: 768px) {
+.row .three-2       { width: 9%; }
+.row .two         { width: 20.66%; }
+.row .three       { width: 29%; }
+}
+@media (max-width: 480px) {
+.row .three-2       { width: 0%; }
+.row .two         { width: 80%; }
+.row .three       { width: 100%; }
+}
+
+
+/*
 @media (max-width: 768px) {
     .row .one      { width: 15%; }
     .row .two         { width: 0%; }
@@ -12859,9 +12875,12 @@ li.active a:before {
     .row .two         { width: 0%; }
     .row .three       { width: 80%; }
 }
+*/
 
 .isotope-filters.row {
-    margin-top: -0px;
+        margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
 }
 
 /*the background for the contact form in the contact page*/
@@ -12996,3 +13015,24 @@ nav.rd-navbar.rd-navbar--is-clone.rd-navbar-static.rd-navbar--is-stuck {
 ul.rd-navbar-nav {
     padding-left: 0;
 }
+
+section.well-md.bg-white{
+  
+    padding-top: 0px;
+    padding-bottom: 0;}
+
+/*buttons in the photo gallery*/
+section.well-md.bg-white{
+  
+    padding-top: 0px;
+    padding-bottom: 0;
+     padding-right: 0px;
+    padding-left: 0px;
+}
+@media (max-width: 770px){
+.container.isotope-filters.row{
+    min-width: 300px;
+    max-width: 700px;
+}
+}
+
