@@ -12580,7 +12580,6 @@ text-align: center;}
   }
   .isotope-filters button:hover {
       color: #4caf50;
-      text-decoration: underline;
   }
   .isotope-filters > * {
     margin-top: 0;
@@ -13017,21 +13016,15 @@ ul.rd-navbar-nav {
 }
 
 <<<<<<< HEAD
-.rd-navbar-static #home-text {
-    display: none;
-}
-.rd-navbar-fixed #home-logo {
-    display: none;
-}
 =======
 section.well-md.bg-white{
-  
+
     padding-top: 0px;
     padding-bottom: 0;}
 
 /*buttons in the photo gallery*/
 section.well-md.bg-white{
-  
+
     padding-top: 0px;
     padding-bottom: 0;
      padding-right: 0px;
@@ -13043,5 +13036,9 @@ section.well-md.bg-white{
     max-width: 700px;
 }
 }
-
->>>>>>> origin/originalDesign
+.rd-navbar-static #home-text {
+    display: none !important;
+}
+.rd-navbar-fixed #home-logo {
+    display: none;
+}
