@@ -103,6 +103,8 @@
 	right: -18px;
 	width: 36px;
 	height: 36px;
+    margin-right: 40px;
+    margin-top: 40px;
 	cursor: pointer;
 	z-index: 8040;
 }
