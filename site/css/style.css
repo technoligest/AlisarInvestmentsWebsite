@@ -12885,7 +12885,7 @@ li.active a:before {
 /*the background for the contact form in the contact page*/
 section.contact-background {
     background-image: url(../images/grain-grass-field-green-hd-wallpaper-1080p.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -12976,8 +12976,6 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
   padding-right: 20px;}
 
 .btn-aylen-1:focus, .btn-aylen-1:hover{
-
-
     color: #fff;
     border-color: transparent;
     background-color: #66bb6a;
