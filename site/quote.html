@@ -9,6 +9,8 @@
     <!-- Stylesheets -->
     <link rel="icon" href="images/icon.png" type="image/x-icon">
     <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script   src="https://code.jquery.com/jquery-3.0.0.min.js"
+    integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/uicss.css">
     <!--[if lt IE 10]>
@@ -33,7 +35,7 @@
     =========================================================-->
     <header class="page-header">
         <!-- RD Navbar -->
-        <img src="images/grass_jpeg.jpg" class="header_image">
+        <img src="images/GreenGrass.jpg" class="header_image">
         <!-- END RD Navbar -->
     </header>
     <!--========================================================
@@ -44,7 +46,7 @@
             <div class="container bg-white well-md-var-2 contact-margin text-md-left text-center">
                 <div class="row">
                     <div class="col-md-8 col-md-preffix-1">
-                        <h2 id="contact-form-header" class="text-bold">Quote form</h2>
+                        <h2 id="contact-form-header" class="text-bold">Estimate form</h2>
                  </div>
                     <div class="col-md-10 col-md-preffix-1">
                             <!-- RD Mailform -->
@@ -55,45 +57,43 @@
                                 <fieldset>
                                     <div class="row">
                                         <div class="block-1 offset-12">
-                                            <label data-add-placeholder>
+
                                                 <input type="text"
                                                        name="name"
                                                        placeholder="Name*"
                                                        data-constraints="@NotEmpty @LettersOnly"/>
-                                            </label>
-                                            <label data-add-placeholder class="offset-11">
+
+
                                                 <input type="text"
                                                        name="address"
                                                        placeholder="Address*"
                                                        data-constraints="@NotEmpty"/>
-                                            </label>
-                                            <label data-add-placeholder class="offset-11">
+
+
                                                 <input type="text"
                                                        name="postal"
                                                        placeholder="Postal*"
                                                        data-constraints="@NotEmpty @PosatCode"/>
-                                            </label>
 
-                                            <label data-add-placeholder class="offset-11">
+
+
                                                 <input type="text"
                                                        name="email"
                                                        placeholder="Email*"
                                                        data-constraints="@NotEmpty @Email"/>
-                                            </label>
 
-                                            <label data-add-placeholder class="offset-11">
+
+
                                                 <input type="text"
                                                    name="phone"
                                                    placeholder="Phone"
                                                    data-constraints="@Phone"/>
-                                            </label>
+
 
                                         <!--Message text field-->
 
-                                            <label data-add-placeholder>
-                                                <textarea name="message" placeholder="Message*"
-                                                          data-constraints="@NotEmpty"></textarea>
-                                            </label>
+
+                                                <textarea name="message" placeholder="Message*"  data-constraints="@NotEmpty"></textarea>
 
 
                                         <!--SUBMIT BUTTON-->

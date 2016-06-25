@@ -12,20 +12,17 @@ body{
     padding-bottom: 0px !important;
 }
 #contact-form-header{
-  color: black;
+  color: #007401;
 }
 .col-md-10.col-md-preffix-1 {
     margin-top: 0px;
-}
-.text-bold{
-    text-align: left;
 }
 .col-xs-12 {
     width: 100%;
 }
 
 input[type="text"],textarea{
-  height: 2.5em;
+  height: 2.25em;
   margin: 0.2em;
   border: 1px solid #c8ddca;
 }
@@ -34,7 +31,7 @@ input[type="text"]:focus,textarea:focus{
 
   box-shadow:0 0px 6px 4px rgba(153, 220, 159, 0.5);
 }
-.mfPlaceHolder {
+input::-ms-input-placeholder, input::-moz-placeholder,input::-webkit-input-placeholder{
   color:rgba(118, 191, 88, 0.5);
 }
 a.fancybox-item.fancybox-close {
@@ -54,21 +51,30 @@ label.offset-11.mfInput {
     margin-top: 15px;
     margin-bottom: 10px;
 }
+input {
+    width: 100%;
+    padding-left: 10px;
+}
 textarea {
-    height: 3em !important;
+  width: 100%;
+  padding-left: 10px;
+  resize: both !important;
+  overflow: auto !important;
+  height: 7em !important;
 }
 .desktop .page-content {
     min-height: 80vh;
+    margin-top: 10px;
 }
 
 
 .mfPlaceHolder{
     font-size:0.875em;
-    padding-top: 9px;
+    padding-top: 7px;
 }
 
 .rd-mailform label input {
-    height: 2.5em;
+    height: 2.25em;
 }
 
 
