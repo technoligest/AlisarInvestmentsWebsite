@@ -8875,12 +8875,15 @@ html:not(.lt-ie10) .not-animated {
 
 .btn-xs {
   border-width: 2px;
-  padding: 15px 10px;
-  font-size: 14px; }
-  .btn-xs .icon {
+  padding: 25px 32px;
+  font-size: 14px;
+}
+
+.btn-xs .icon {
     font-size: 20.8544px;
     padding-right: 10px;
-    line-height: 0.75188em; }
+    line-height: 0.75188em;
+}
 
 .btn-sm {
   padding: 21px 40px;
@@ -13032,4 +13035,8 @@ section.well-md.bg-white.gallery-buttons{
 }
 .rd-navbar-fixed #home-logo {
     display: none;
+}
+
+#photo-button{
+    padding: 15px 10px;
 }
