@@ -13010,7 +13010,7 @@ dt.heading-2.text-bold, h1.text-center.pp-header{
 
 /*making sure the navbar is on top of everything*/
 nav.rd-navbar.rd-navbar--is-clone.rd-navbar-static.rd-navbar--is-stuck {
-    z-index: 1000000;
+    z-index: 1050;
 }
 ul.rd-navbar-nav {
     padding-left: 0;
