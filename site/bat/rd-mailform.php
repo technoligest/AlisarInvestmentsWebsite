@@ -1,12 +1,11 @@
 <?php
 
-$recipients = 'zaher88abd@gmail.com';
+$recipients = 'yaser.alkayale@dal.ca';
 
 try {
     require './phpmailer/PHPMailerAutoload.php';
 
-    preg_match_all("/([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)/",
-     $recipients, $addresses, PREG_OFFSET_CAPTURE);
+    preg_match_all("/([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)/", $recipients, $addresses, PREG_OFFSET_CAPTURE);
 
     if (!count($addresses[0])) {
         die('MF001');
@@ -50,6 +49,18 @@ try {
         $template = str_replace(
             array("<!-- #{MessageState} -->", "<!-- #{MessageDescription} -->"),
             array("Message:", $_POST['message']),
+            $template);
+    }
+    if (isset($_POST['address'])) {
+        $template = str_replace(
+            array("<!-- #{AddressState} -->", "<!-- #{AddressDescription} -->"),
+            array("Address:", $_POST['address']),
+            $template);
+    }
+    if (isset($_POST['postal'])) {
+        $template = str_replace(
+            array("<!-- #{PostalState} -->", "<!-- #{PostalDescription} -->"),
+            array("postal:", $_POST['postal']),
             $template);
     }
 

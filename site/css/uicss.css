@@ -1,0 +1,99 @@
+body{
+}
+.page-header{
+  margin-top: 0px;
+}
+.page-header img{
+  width: 100%;
+  max-height: 6em;
+}
+.container.bg-white.well-md-var-2.contact-margin.text-md-left.text-center {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+#contact-form-header{
+  color: #007401;
+}
+.col-md-10.col-md-preffix-1 {
+    margin-top: 0px;
+}
+.col-xs-12 {
+    width: 100%;
+}
+
+input[type="text"],textarea{
+  height: 2.25em;
+  margin: 0.2em;
+  border: 1px solid #c8ddca;
+}
+
+input[type="text"]:focus,textarea:focus{
+
+  box-shadow:0 0px 6px 4px rgba(153, 220, 159, 0.5);
+}
+input::-ms-input-placeholder, input::-moz-placeholder,input::-webkit-input-placeholder{
+  color:rgba(118, 191, 88, 0.5);
+}
+a.fancybox-item.fancybox-close {
+    margin-right: 50px;
+    margin-top: 50px;
+}
+form.rd-mailform {
+    margin: 0px;
+}
+label.offset-11.mfInput {
+    margin-top: 10px;
+}
+.mfInput {
+    margin-top: 10px !important;
+}
+.mfControls.text-center {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+input {
+    width: 100%;
+    padding-left: 10px;
+}
+textarea {
+  width: 100%;
+  padding-left: 10px;
+  resize: none;
+  overflow: auto !important;
+  height: 7em !important;
+}
+.desktop .page-content {
+    min-height: 80vh;
+    margin-top: 10px;
+}
+
+
+.mfPlaceHolder{
+    font-size:0.875em;
+    padding-top: 7px;
+}
+
+.rd-mailform label input {
+    height: 2.25em;
+}
+
+
+.quote-header{
+    background: url("../images/grass_jpeg.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: 150px;
+    color: white;
+}
+.quote-header-image{
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.quote-header-title{
+   font-size: 2.5em;
+    margin-top:-1em;
+}
