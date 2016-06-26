@@ -13040,3 +13040,18 @@ section.well-md.bg-white.gallery-buttons{
 #photo-button{
     padding: 15px 10px;
 }
+
+.contact-form .offset-11 {
+    background-color: white;
+    border: 0.5px solid #014a09;
+    margin: 2px;
+    padding: 4px;
+    width: 100%;
+}
+.contact-form textarea {
+    background-color: white;
+    border: 0.5px solid #014a09;
+    padding: 4px;
+    width: 100%;
+    height: 99%;
+}

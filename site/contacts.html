@@ -118,46 +118,46 @@
                  </div>
                     <div class="col-md-10 col-md-preffix-1">
                             <!-- RD Mailform -->
-                            <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
+                            <form class='rd-mailform contact-form' method="post" action="bat/rd-mailform.php">
                                 <!-- RD Mailform Type -->
                                 <input type="hidden" name="form-type" value="contact"/>
                                 <!-- END RD Mailform Type -->
                                 <fieldset>
                                     <div class="row">
                                         <div class="block-1">
-                                            <label data-add-placeholder>
+
                                                 <input type="text"
-                                                       name="name"
+                                                       name="name"class="offset-11"
                                                        placeholder="Name*"
                                                        data-constraints="@NotEmpty @LettersOnly"/>
-                                            </label>
-                                            <label data-add-placeholder class="offset-11">
+
+
                                                 <input type="text"
-                                                       name="address"
+                                                       name="address" class="offset-11"
                                                        placeholder="Address*"
                                                        data-constraints="@NotEmpty"/>
-                                            </label>
 
-                                            <label data-add-placeholder class="offset-11">
-                                                <input type="text"
+
+
+                                                <input type="text"class="offset-11"
                                                        name="email"
                                                        placeholder="Email*"
                                                        data-constraints="@NotEmpty @Email"/>
-                                            </label>
 
-                                            <label data-add-placeholder class="offset-11">
-                                                <input type="text"
+
+
+                                                <input type="text"class="offset-11"
                                                    name="phone"
                                                    placeholder="Phone"
                                                    data-constraints="@Phone"/>
-                                            </label>
+
                                         </div>
                                         <!--Message text field-->
                                         <div class="block-2 offset-12">
-                                            <label data-add-placeholder>
+
                                                 <textarea name="message" placeholder="Message*"
                                                           data-constraints="@NotEmpty"></textarea>
-                                            </label>
+
                                         </div>
 
                                         <!--SUBMIT BUTTON-->
@@ -261,7 +261,7 @@
 <script src="js/core.min.js"></script>
 <!-- Additional Functionality Scripts -->
 <script src="js/script.js"></script>
-    
+
 <!-- Quote box scripts-->
 <script src="js\fancybox\jquery.fancybox.js"></script>
 <script src="js\fancybox\jquery.fancybox.pack.js"></script>
@@ -270,5 +270,3 @@
 
 </body>
 </html>
-
-
